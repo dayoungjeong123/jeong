@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
+matplotlib.rcParams['font.family'] = 'Malgun Gothic'
 
 st.set_page_config(layout="wide") # 넓은 레이아웃 사용
 

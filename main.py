@@ -1,8 +1,14 @@
 import streamlit as st
 import numpy as np
-import matplotlib
 import matplotlib.pyplot as plt
-matplotlib.rcParams['font.family'] = 'DejaVu Sans'  # Cloud에서 안전한 기본 폰트
+import os
+import matplotlib.font_manager as fm
+
+font_path = os.path.join(os.path.dirname(__file__), "NanumGothic.ttf")
+font_name = fm.FontProperties(fname=font_path).get_name()
+
+import matplotlib
+matplotlib.rcParams['font.family'] = font_name
 matplotlib.rcParams['axes.unicode_minus'] = False
 
 st.set_page_config(layout="wide") # 넓은 레이아웃 사용

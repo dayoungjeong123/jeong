@@ -1,16 +1,14 @@
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
 import os
+import matplotlib
+import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 
 font_path = os.path.join(os.path.dirname(__file__), "NanumGothic.ttf")
 font_name = fm.FontProperties(fname=font_path).get_name()
-
-import matplotlib
 matplotlib.rcParams['font.family'] = font_name
 matplotlib.rcParams['axes.unicode_minus'] = False
-
 st.set_page_config(layout="wide") # 넓은 레이아웃 사용
 
 st.title("외계행성 중력렌즈 시뮬레이터")

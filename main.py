@@ -1,7 +1,8 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
-matplotlib.rcParams['font.family'] = 'Malgun Gothic'
+matplotlib.rcParams['font.family'] = 'DejaVu Sans'  # Cloud에서 안전한 기본 폰트
+matplotlib.rcParams['axes.unicode_minus'] = False
 
 st.set_page_config(layout="wide") # 넓은 레이아웃 사용
 

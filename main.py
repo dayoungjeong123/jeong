@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+import matplotlib
 import matplotlib.pyplot as plt
 matplotlib.rcParams['font.family'] = 'DejaVu Sans'  # Cloud에서 안전한 기본 폰트
 matplotlib.rcParams['axes.unicode_minus'] = False

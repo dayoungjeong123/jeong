@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import os
 import matplotlib.font_manager as fm
 
-font_path = os.path.join(os.path.dirname(__file__), "NanumGothic.ttf")
+font_path = os.path.join(os.path.dirname(__file__), "NanumGothicCoding.ttf")
 font_name = fm.FontProperties(fname=font_path).get_name()
 
 import matplotlib

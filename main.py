@@ -4,13 +4,19 @@ import os
 import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
+import os
 
-font_path = os.path.join(os.path.dirname(__file__), "NanumGothic.ttf")
-font_name = fm.FontProperties(fname=font_path).get_name()
-matplotlib.rcParams['font.family'] = font_name
-matplotlib.rcParams['axes.unicode_minus'] = False
-st.set_page_config(layout="wide") # 넓은 레이아웃 사용
+# 폰트 경로
+font_path = "NanumGothic.ttf"
 
+try:
+    # 폰트를 직접 등록하고 이름 강제 지정
+    fm.fontManager.addfont(font_path)
+    plt.rc('font', family='NanumGothic')
+    plt.rcParams['axes.unicode_minus'] = False
+
+except Exception as e:
+    st.error(f"❌ 폰트 적용 실패: {e}")
 st.title("외계행성 중력렌즈 시뮬레이터")
 
 st.sidebar.header("외계 행성 위치 조절")

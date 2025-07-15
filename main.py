@@ -1,7 +1,5 @@
 import streamlit as st
 import numpy as np
-import os
-import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 import os
